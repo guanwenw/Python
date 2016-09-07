@@ -31,4 +31,7 @@ if key in tinydict:
 else:
    print key + " is not available in the given dict"
 
-
+# iterate dict
+for k in tinydict:
+    print k
+    print tinydict[k]
