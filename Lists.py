@@ -9,3 +9,9 @@ print list[1:3]     # Prints elements starting from 2nd till 3rd
 print list[2:]      # Prints elements starting from 3rd element
 print tinylist * 2  # Prints list two times
 print list + tinylist # Prints concatenated lists
+
+if 786 in list:
+    print "786 in list"
+
+for l in list:
+    print l
