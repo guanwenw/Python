@@ -2,7 +2,9 @@
 
 a = 10
 b = 20
-list = [1, 2, 3, 4, 5 ];
+# both works
+# list = [1, 2, 3, 4, 5 ];
+list = [1, 2, 3, 4, 5 ] 
 
 if ( a in list ):
    print "Line 1 - a is available in the given list"
