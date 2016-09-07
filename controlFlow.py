@@ -22,12 +22,14 @@ def forStatement(n):
         print "One more practise", n, 
         print w, len(w)
 
+    # from 2 to 9
     for num in range(2, 10):
         if num % 2 == 0:
             print "Found an even number", num
             continue
         print "Found a number", num
 
+    # from 20 to 11
     for num in range(20, 10, -1):
         if num % 2 == 0:
             print "Found an even number", num
@@ -100,6 +102,7 @@ if __name__ == "__main__":
     ask_ok('OK to overwrite the file?', 2)
     ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')
 
+    # call back mechanism
     cubeVal = map(cube, range(1, 6))
     print cubeVal
 
@@ -108,5 +111,3 @@ if __name__ == "__main__":
 
     sumVal = map(add, cubeVal, cubeVal)
     print sumVal
-
-    
