@@ -53,8 +53,6 @@ if __name__ == "__main__":
 
     
     name = '*.py'
-    #name = '*.txt'
     pattern = '*nc'
-    path = '/exa/validation/Thermal/' 
-    #path = '/exa/validation/Thermal/' 
-    print find('*nc', '/exa/validation/Thermal')
+    path = '/Thermal/' 
+    print find('*nc', '/Thermal')
