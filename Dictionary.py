@@ -16,3 +16,19 @@ if 2 in dict:
    print "2 is available in the given dict"
 else:
    print "2 is not available in the given dict"
+
+
+# does not work for value in dict
+val = 'john'
+if val in tinydict:
+   print val + " is available in the given dict"
+else:
+   print val + " is not available in the given dict"
+
+key = 'code'
+if key in tinydict:
+   print key + " is available in the given dict"
+else:
+   print key + " is not available in the given dict"
+
+
