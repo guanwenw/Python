@@ -9,6 +9,7 @@ tinydict = {'name': 'john','code':6734, 'dept': 'sales'}
 print dict['one']       # Prints value for 'one' key
 print dict[2]           # Prints value for 2 key
 print tinydict          # Prints complete dictionary
+print str(tinydict)
 print tinydict.keys()   # Prints all the keys
 print tinydict.values() # Prints all the values
 
@@ -31,7 +32,26 @@ if key in tinydict:
 else:
    print key + " is not available in the given dict"
 
-# iterate dict
+
 for k in tinydict:
     print k
     print tinydict[k]
+
+dict = {'Name': 'Zara', 'Age': 7, 'Class': 'First'}
+
+print "dict['Name']: ", dict['Name']
+print "dict['Age']: ", dict['Age']
+
+dict['Age'] = 'String'
+print "dict['Age']: ", dict['Age']
+
+del dict['Name']; # remove entry with key 'Name'
+# print "dict['Name']: ", dict['Name']
+# KeyError: 'Name'
+
+dict.clear();     # remove all entries in dict
+del dict ;        # delete entire dictionary
+
+# print "dict['Age']: ", dict['Age']
+# print "dict['School']: ", dict['School']
+# TypeError: 'type' object has no attribute '__getitem__'
