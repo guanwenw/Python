@@ -65,3 +65,7 @@ def customize(x, y):
 
 print sorted([5, 2, 4, 1, 3], cmp=numeric_compare)
 print sorted([5, 2, 4, 1, 3], cmp=customize)
+
+# extend : append in a loop
+list2.extend([111]*2)
+print list2
