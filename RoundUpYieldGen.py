@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+import pdb
 import random
  
 def get_data():
@@ -16,7 +17,8 @@ def consume():
         data_items_seen += len(data)
         running_sum += sum(data)
         print('The running average is {}'.format(running_sum / float(data_items_seen)))
- 
+# formater or %s, etc 
+
 def produce(consumer):
     """Produces a set of values and forwards them to the pre-defined consumer
     function"""
@@ -26,8 +28,11 @@ def produce(consumer):
         consumer.send(data)
         yield
  
+# the send method is very hard to debug
+# always need to find a alternative way
 if __name__ == '__main__':
     consumer = consume()
+    pdb.set_trace()
     consumer.send(None)
     producer = produce(consumer)
  
