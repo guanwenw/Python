@@ -15,6 +15,19 @@ def temp_convert(var):
 temp_convert("xyz");
 
 
+
+class Networkerror(RuntimeError):
+   def __init__(self, arg):
+      self.args = arg
+
+try:
+   raise Networkerror("Bad hostname")
+except Networkerror,e:
+   print e.args
+
+string = "Bad host"
+print string
+
 def functionName( level ):
    if level < 1:
       raise "Invalid level!", level
@@ -22,3 +35,5 @@ def functionName( level ):
       # if we raise the exception
 
 functionName(0)
+
+
