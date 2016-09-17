@@ -37,3 +37,7 @@ c.getAttr()          # again call parent's method
 
 # Override Examples
 c.myMethod()
+
+print issubclass(Child, Parent)
+print isinstance(c, Child)
+print isinstance(c, Parent)
