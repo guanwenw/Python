@@ -36,3 +36,7 @@ print "Employee.__module__:", Employee.__module__
 print "Employee.__bases__:", Employee.__bases__
 print "Employee.__dict__:", Employee.__dict__
 
+print hasattr(emp1, 'age')    # Returns true if 'age' attribute exists
+print getattr(emp1, 'age')    # Returns value of 'age' attribute
+print setattr(emp1, 'age', 8) # Set attribute 'age' at 8
+print delattr(emp1, 'age')    # Delete attribute 'age'
